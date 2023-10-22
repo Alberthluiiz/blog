@@ -1,0 +1,128 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: min(80%, 1200px);
+  margin: 0 auto;
+}
+
+/* body {
+    height: 100vh;
+    margin: 0px;
+} */
+header {
+  position: relative;
+  justify-content: space-around;
+  align-items: start;
+  background-image: url("/blog/assets/img/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 540px;
+}
+
+.nav {
+  width: 100%;
+  height: 115px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav .logo img {
+  height: 110px;
+}
+.nav .logo h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444;
+}
+.nav ul {
+  display: flex;
+  gap: 20px;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 540px;
+}
+.description .info {
+  /* Damos posición Absoluta al info para poder colocar la imagen en el borde inferior */
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.description .info h2,
+.description .info p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  text-shadow: 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444;
+}
+.description img {
+  position: relative;
+  top: 50%;
+  height: 110px;
+}
+
+/* Acerca de  */
+.container .about {
+  background: lightcoral;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 25px;
+}
+.container .about h3 {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.container .about p {
+  text-align: justify;
+}
+
+/* Card */
+.container .tituloTrabajos {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.container .contenidoCard {
+  border: 1px solid #444;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .card {
+  border: 1px solid yellow;
+  margin: 30px 15px;
+}/*# sourceMappingURL=style.css.map */

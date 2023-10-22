@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+// Globales
+.container {
+    width: min(80%, 1200px);
+    margin: 0 auto;
+}
+
+/* body {
+    height: 100vh;
+    margin: 0px;
+} */
+
+header {
+    position: relative;
+    justify-content: space-around;
+    align-items: start;
+    //padding: 10px;
+    background-image: url('/blog/assets/img/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 540px;
+}
+
+.nav {
+    width: 100%;
+    height: 115px;
+    //background: lightcoral;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            height: 110px;
+        }
+
+        h2 {
+            font-size: 35px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444;
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+
+        li {
+            list-style: none;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background: wheat;
+    width: 100%;
+    height: 540px;
+
+    .info {
+        /* Damos posición Absoluta al info para poder colocar la imagen en el borde inferior */
+        position: absolute;
+        border: 2px solid white;
+        border-radius: 10px;
+
+        h2,
+        p {
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            padding: 15px;
+            text-shadow: 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444;
+        }
+    }
+
+    img {
+        position: relative;
+        top: 50%;
+        height: 110px;
+    }
+}
+
+/* Acerca de  */
+.container {
+    .about {
+        background: lightcoral;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 25px;
+
+        h3 {
+            text-align: center;
+            font-size: 25px;
+            //text-shadow: 3px 1px 2px #444;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+/* Card */
+
+.container {
+    .tituloTrabajos {
+        text-align: center;
+        font-size: 25px;
+        //text-shadow: 3px 1px 2px #444;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    .contenidoCard {
+        border: 1px solid #444;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card {
+        border: 1px solid yellow;
+        margin: 30px 15px;
+    }
+}
