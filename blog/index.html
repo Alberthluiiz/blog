@@ -4,125 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <!-- Inicio Header -->
     <header>
-      <nav class="nav">
+      <nav class="menu">
         <div class="logo">
-          <img src="/blog/assets/img/logo.png" alt="" />
-          <h2>Yausing</h2>
+          <img src="/assets/img/logo.png" alt="" />
+          <h2 class="titleMenu">Yausing</h2>
         </div>
-        <ul>
+        <ul id="links">
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Trabajo</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Categoria</a></li>
+          <li><a href="#">Ofertas</a></li>
         </ul>
       </nav>
-      <!-- Descripcion -->
-      <div class="description">
-        <div class="info">
-          <h2>Yausing</h2>
-          <p>Local del buen vestir Mary</p>
+      <div class="boxheader">
+        <div class="textBox">
+          <h2 class="titleBox">Yausing</h2>
+          <p class="descriptionBox">Local del buen vestir Mary</p>
         </div>
-        <img src="/blog/assets/img/logo.png" alt="" />
+      </div>
+      <div class="headerProfile">
+        <img src="/assets/img/logo.png" alt="" />
       </div>
     </header>
-    <!-- Fin Header -->
 
-    <!-- Inicio Acerca de -->
-    <section class="container">
+    <main class="container">
       <div class="about">
-        <h3>Acerca de</h3>
-        <p>
+        <h3 class="aboutTitle">Acerca de</h3>
+        <p class="aboutDescription">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
           expedita dolorum quibusdam eius cupiditate, quidem tempora error, fuga
           blanditiis quam voluptate nisi doloremque. Labore recusandae rem
           minima explicabo animi dignissimos?
         </p>
       </div>
-    </section>
-    <!-- Fin Acerca de -->
 
-    <!-- Inicio Card -->
-    <div class="container">
-      <h3 class="tituloTrabajos">Trabajos</h3>
-      <div class="contenidoCard">
-        <section class="card">
-          <div class="foto">
-            <img src="/blog/assets/img/blusas.png" alt="" />
-          </div>
-          <div class="des">
-            <h3>Blusas</h3>
-            <p>Blusa Bordada en Hilo y Orlon</p>
-          </div>
-        </section>
-        <section class="card">
-          <div class="foto">
-            <img src="/blog/assets/img/blusas.png" alt="" />
-          </div>
-          <div class="des">
-            <h3>Blusas</h3>
-            <p>Blusa Bordada en Hilo y Orlon</p>
-          </div>
-        </section>
-        <section class="card">
-          <div class="foto">
-            <img src="/blog/assets/img/blusas.png" alt="" />
-          </div>
-          <div class="des">
-            <h3>Blusas</h3>
-            <p>Blusa Bordada en Hilo y Orlon</p>
-          </div>
-        </section>
-        <section class="card">
-          <div class="foto">
-            <img src="/blog/assets/img/blusas.png" alt="" />
-          </div>
-          <div class="des">
-            <h3>Blusas</h3>
-            <p>Blusa Bordada en Hilo y Orlon</p>
-          </div>
-        </section>
-        <section class="card">
-          <div class="foto">
-            <img src="/blog/assets/img/blusas.png" alt="" />
-          </div>
-          <div class="des">
-            <h3>Blusas</h3>
-            <p>Blusa Bordada en Hilo y Orlon</p>
-          </div>
-        </section>
-        <section class="card">
-          <div class="foto">
-            <img src="/blog/assets/img/blusas.png" alt="" />
-          </div>
-          <div class="des">
-            <h3>Blusas</h3>
-            <p>Blusa Bordada en Hilo y Orlon</p>
-          </div>
-        </section>
-        <section class="card">
-          <div class="foto">
-            <img src="/blog/assets/img/blusas.png" alt="" />
-          </div>
-          <div class="des">
-            <h3>Blusas</h3>
-            <p>Blusa Bordada en Hilo y Orlon</p>
-          </div>
-        </section>
-        <section class="card">
-          <div class="foto">
-            <img src="/blog/assets/img/blusas.png" alt="" />
-          </div>
-          <div class="des">
-            <h3>Blusas</h3>
-            <p>Blusa Bordada en Hilo y Orlon</p>
-          </div>
-        </section>
-      </div>
-    </div>
-    <!-- Fin Card -->
+      <section class="cards">
+        <h3 class="tituloTrabajos" id="categorias">Categoria</h3>
+        <div class="contenidoCard" id="contenidoCard"></div>
+      </section>
+    </main>
+
+    <footer>Yausing &copy; - Todos los derechos reservados</footer>
+    <script src="/assets/script/main.mjs" type="module"></script>
   </body>
 </html>

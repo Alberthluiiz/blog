@@ -5,148 +5,234 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-// Globales
+// Variables para reutilizar colores y tamaños
+$colorPrimary: #4A93E7;
+$colorSecondary: #5a5a5a;
+$colorShadow: #1E2B38;
+$colorBorder: #444;
+$colorBackground: white;
+$shadowSize: 10px;
+
+/* -- Estilos Generales -- */
 .container {
-    width: min(80%, 1200px);
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 80%;
     margin: 0 auto;
 }
 
-/* body {
-    height: 100vh;
-    margin: 0px;
-} */
 
 header {
-    position: relative;
-    justify-content: space-around;
-    align-items: start;
-    //padding: 10px;
-    background-image: url('/blog/assets/img/fondo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 540px;
-}
+    background-image: url('/assets/img/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 
-.nav {
-    width: 100%;
-    height: 115px;
-    //background: lightcoral;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-
-    .logo {
+    .menu {
+        position: fixed;
+        top: 0;
         display: flex;
-        align-items: center;
-        gap: 20px;
+        width: 100%;
+        height: 75px;
+        justify-content: space-around;
+        backdrop-filter: blur(3.5px) brightness(1.2);
+        background-color: rgba(44, 41, 41, 0.504);
+        z-index: 100;
 
-        img {
-            height: 110px;
+        .logo {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            img {
+                height: 70px;
+            }
+
+            .titleMenu {
+                font-size: 35px;
+                background: linear-gradient(45deg, #21aabb, #ffaf00, #264982, #FF6347);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+
         }
 
-        h2 {
-            font-size: 35px;
-            font-weight: bold;
-            color: white;
-            text-shadow: 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444;
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            li {
+                list-style: none;
+
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: white;
+                    letter-spacing: 2px;
+                    text-shadow: 2px 2px 4px #444, 2px 2px 4px #444, 2px 2px 4px #444, 2px 2px 4px #444, 2px 2px 4px #444, 2px 2px 4px #444;
+                    transition: all 300ms;
+
+                    &:hover {
+                        text-shadow: none;
+                        background: linear-gradient(to right, #21aabb, #ffaf00, #264982, #FF6347);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        display: inline-block;
+                        transform: scale(1.2);
+                        transform-origin: center;
+                    }
+
+                }
+            }
         }
     }
 
-    ul {
+    .boxheader {
+        //background: lightblue;
         display: flex;
-        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        //height: 390px;
+        height: 540px;
 
-        li {
-            list-style: none;
+        .textBox {
+            padding: 25px;
+            text-align: center;
+            justify-content: center;
+            width: 300px;
+            height: auto;
+            border: 1px solid white;
+            border-radius: 10px;
+            font-size: 25px;
 
-            a {
+            .titleBox {
                 color: white;
-                text-decoration: none;
-                font-size: 20px;
+            }
+
+            .descriptionBox {
+                margin-top: 25px;
+                font-size: 18px;
+                font-weight: 500;
+                color: white;
+            }
+
+        }
+    }
+
+    .headerProfile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //height: 150px;
+        height: 0px;
+
+        img {
+            height: 100px;
+        }
+    }
+}
+
+main {
+    .about {
+        margin-top: 70px;
+        margin-bottom: 70px;
+        padding: 25px;
+
+        .aboutTitle {
+            text-align: center;
+            color: #ffaf00;
+            text-transform: uppercase;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .aboutDescription {
+            color: #264982;
+            text-align: justify;
+        }
+    }
+
+    /* --- Cards --- */
+    // Estilos de las tarjetas
+    .cards {
+        .tituloTrabajos {
+            text-align: center;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: $colorPrimary;
+            margin-bottom: 25px;
+        }
+
+        .contenidoCard {
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .card {
+            width: 240px;
+            height: auto;
+            border: 1px solid $colorBorder;
+            background: $colorBackground;
+            border-radius: 10px;
+            box-shadow: -$shadowSize $shadowSize $shadowSize darken($colorShadow, 40%);
+            overflow: hidden;
+            cursor: pointer;
+            transition: 0.4s all ease;
+
+            &:hover {
+                transform: translateY(-$shadowSize);
+                box-shadow: $shadowSize $shadowSize $shadowSize $colorShadow;
+            }
+
+            .foto {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .des {
+
+                h3,
+                p {
+                    text-align: center;
+                    padding: 10px;
+                }
+
+                h3 {
+                    color: $colorPrimary;
+                }
+
+                p {
+                    color: $colorSecondary;
+                }
             }
         }
     }
 }
 
-.description {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    //background: wheat;
+footer {
+    background: #444;
     width: 100%;
-    height: 540px;
-
-    .info {
-        /* Damos posición Absoluta al info para poder colocar la imagen en el borde inferior */
-        position: absolute;
-        border: 2px solid white;
-        border-radius: 10px;
-
-        h2,
-        p {
-            color: white;
-            text-align: center;
-            font-size: 25px;
-            padding: 15px;
-            text-shadow: 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444, 1px 1px 2px #444;
-        }
-    }
-
-    img {
-        position: relative;
-        top: 50%;
-        height: 110px;
-    }
-}
-
-/* Acerca de  */
-.container {
-    .about {
-        background: lightcoral;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        padding: 25px;
-
-        h3 {
-            text-align: center;
-            font-size: 25px;
-            //text-shadow: 3px 1px 2px #444;
-            text-transform: uppercase;
-            margin-bottom: 25px;
-        }
-
-        p {
-            text-align: justify;
-        }
-    }
-}
-
-/* Card */
-
-.container {
-    .tituloTrabajos {
-        text-align: center;
-        font-size: 25px;
-        //text-shadow: 3px 1px 2px #444;
-        text-transform: uppercase;
-        margin-bottom: 25px;
-    }
-
-    .contenidoCard {
-        border: 1px solid #444;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .card {
-        border: 1px solid yellow;
-        margin: 30px 15px;
-    }
+    margin-top: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    background: #1E2B38;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
 }

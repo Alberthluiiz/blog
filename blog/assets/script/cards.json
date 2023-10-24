@@ -1,0 +1,42 @@
+[
+  {
+    "title": "blusa",
+    "img": "./assets/img/blusas.png",
+    "description": "Blusa Bordada en Hilo y Orlon"
+  },  
+  {
+    "title": "poncho",
+    "img": "./assets/img/ponchos.png",
+    "description": "Blusa Bordada en Hilo y Orlon"
+  },
+  {
+    "title": "collar",
+    "img": "./assets/img/collar.png",
+    "description": "Blusa Bordada en Hilo y Orlon"
+  },
+  {
+    "title": "mochila",
+    "img": "./assets/img/mochila.png",
+    "description": "Blusa Bordada en Hilo y Orlon"
+  },
+  {
+    "title": "saco",
+    "img": "./assets/img/saco.png",
+    "description": "Blusa Bordada en Hilo y Orlon"
+  },
+  {
+    "title": "blusa",
+    "img": "./assets/img/blusas.png",
+    "description": "Blusa Bordada en Hilo y Orlon"
+  },
+  {
+    "title": "blusa",
+    "img": "./assets/img/blusas.png",
+    "description": "Blusa Bordada en Hilo y Orlon"
+  },
+  {
+    "title": "blusa",
+    "img": "./assets/img/blusas.png",
+    "description": "Blusa Bordada en Hilo y Orlon"
+  }
+]
