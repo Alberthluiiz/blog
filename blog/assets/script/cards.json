@@ -1,42 +1,32 @@
 [
   {
-    "title": "blusa",
+    "title": "Blusas",
     "img": "./assets/img/blusas.png",
-    "description": "Blusa Bordada en Hilo y Orlon"
+    "description": "Blusa Bordada en Hilo y Orlon varios colores"
   },  
   {
-    "title": "poncho",
+    "title": "Ponchos de niño y Adultos",
     "img": "./assets/img/ponchos.png",
-    "description": "Blusa Bordada en Hilo y Orlon"
+    "description": "3 tamaños"
   },
   {
-    "title": "collar",
+    "title": "Collares",
     "img": "./assets/img/collar.png",
-    "description": "Blusa Bordada en Hilo y Orlon"
+    "description": "Collares Originales varios Diseños y Colores"
   },
   {
-    "title": "mochila",
+    "title": "Mochilas y Bolsos",
     "img": "./assets/img/mochila.png",
-    "description": "Blusa Bordada en Hilo y Orlon"
+    "description": "3 Tamaños diferentes y varios colores "
   },
   {
-    "title": "saco",
+    "title": "Sacos de Lana",
     "img": "./assets/img/saco.png",
-    "description": "Blusa Bordada en Hilo y Orlon"
+    "description": "Diferentes colores y varios diseños"
   },
   {
-    "title": "blusa",
-    "img": "./assets/img/blusas.png",
-    "description": "Blusa Bordada en Hilo y Orlon"
-  },
-  {
-    "title": "blusa",
-    "img": "./assets/img/blusas.png",
-    "description": "Blusa Bordada en Hilo y Orlon"
-  },
-  {
-    "title": "blusa",
-    "img": "./assets/img/blusas.png",
-    "description": "Blusa Bordada en Hilo y Orlon"
+    "title": "Alpargatas",
+    "img": "./assets/img/alpargatas.png",
+    "description": "Alpargatas altos y bajos varios colores"
   }
 ]

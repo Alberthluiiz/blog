@@ -151,14 +151,16 @@ main .cards .card {
   border: 1px solid #444;
   background: white;
   border-radius: 10px;
-  box-shadow: -10px 10px 10px black;
+  box-shadow: -2px 2px 2px black;
+  /* box-shadow: 2px 2px 2px #1E2B38; */
   overflow: hidden;
   cursor: pointer;
   transition: 0.4s all ease;
 }
 main .cards .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 10px 10px 10px #1E2B38;
+  transform: translateY(-2px);
+  /* box-shadow: $shadowSize $shadowSize $shadowSize $colorShadow; */
+  box-shadow: 2px 2px 2px #1E2B38;
 }
 main .cards .card .foto img {
   width: 100%;
@@ -176,17 +178,97 @@ main .cards .card .des p {
   color: #5a5a5a;
 }
 
-footer {
-  background: #444;
+.mapbg {
   width: 100%;
-  margin-top: 75px;
-  height: 75px;
+  background: #1E2B38;
+  margin-top: 50px;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  margin-bottom: 50px;
+}
+.map .titleMap {
+  font-size: 30px;
+  color: white;
+  padding: 15px;
+}
+
+.footerInfo {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  height: 50px;
-  background: #1E2B38;
-  padding: 10px;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 75px;
   color: white;
+}
+.footerInfo section {
+  max-width: 250px;
+  width: 250px;
+  height: auto;
+}
+.footerInfo .imgFooter a img {
+  width: 100px;
+}
+.footerInfo .refInfo > h3,
+.footerInfo p {
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  background: #1E2B38;
+}
+footer span {
+  padding: 25px;
   font-size: 20px;
+  color: white;
+  border-top: 1px solid white;
+}
+
+/* footer {
+    background: #444;
+    width: 100%;
+    margin-top: 75px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    background: #1E2B38;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+} */
+/* Card Categorias */
+.cardCategory {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 75px;
+  background: #182033;
+}
+.cardCategory .container {
+  display: flex;
+  flex-direction: row;
+}
+.cardCategory .container .titleCardCategory {
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+}
+.cardCategory .container .category {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  background: #4A93E7;
 }/*# sourceMappingURL=style.css.map */

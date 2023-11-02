@@ -6,12 +6,14 @@
 }
 
 // Variables para reutilizar colores y tamaños
+$colorFooter: #1E2B38;
 $colorPrimary: #4A93E7;
 $colorSecondary: #5a5a5a;
-$colorShadow: #1E2B38;
+$colorShadow: #3c5976;
 $colorBorder: #444;
 $colorBackground: white;
-$shadowSize: 10px;
+$shadowSize: 2px;
+$colorWhite: white;
 
 /* -- Estilos Generales -- */
 .container {
@@ -186,13 +188,15 @@ main {
             background: $colorBackground;
             border-radius: 10px;
             box-shadow: -$shadowSize $shadowSize $shadowSize darken($colorShadow, 40%);
+            /* box-shadow: 2px 2px 2px #1E2B38; */
             overflow: hidden;
             cursor: pointer;
             transition: 0.4s all ease;
 
             &:hover {
                 transform: translateY(-$shadowSize);
-                box-shadow: $shadowSize $shadowSize $shadowSize $colorShadow;
+                /* box-shadow: $shadowSize $shadowSize $shadowSize $colorShadow; */
+                box-shadow: 2px 2px 2px #1E2B38;
             }
 
             .foto {
@@ -222,11 +226,77 @@ main {
     }
 }
 
+.mapbg {
+    width: 100%;
+    background: #1E2B38;
+    margin-top: 50px;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background: #21aabb;
+    padding: 25px;
+    margin-bottom: 50px;
+
+    .titleMap {
+        font-size: 30px;
+        color: $colorWhite;
+        padding: 15px;
+    }
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 75px;
+    color: $colorWhite;
+
+    section {
+        max-width: 250px;
+        width: 250px;
+        height: auto;
+    }
+
+    .imgFooter {
+        a {
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    .refInfo>h3,
+    p {
+        padding: 10px;
+    }
+
+}
+
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    background: $colorFooter;
+
+    span {
+        padding: 25px;
+        font-size: 20px;
+        color: $colorWhite;
+        border-top: 1px solid $colorWhite;
+    }
+}
+
+/* footer {
     background: #444;
     width: 100%;
     margin-top: 75px;
-    height: 75px;
+    height: 150px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -235,4 +305,35 @@ footer {
     padding: 10px;
     color: white;
     font-size: 20px;
+} */
+
+
+
+/* Card Categorias */
+.cardCategory {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 75px;
+    background: #182033;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        .titleCardCategory {
+            padding: 15px;
+            color: $colorWhite;
+            text-align: center;
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        .category {
+            display: flex;
+            flex-direction: column;
+            max-width: 250px;
+            background: #4A93E7;
+        }
+    }
 }
